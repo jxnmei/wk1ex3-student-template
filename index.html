@@ -36,3 +36,22 @@
     <button onclick="console.log(document.getElementById('num1').value+document.getElementById('num2').value)">Add Number 1 and Number 2</button>
   </body>
 </html>
+
+<script>
+    function addNumbers() {
+      let inputNum1 = document.getElementById('num1').value
+      let inputNum2 = document.getElementById('num2').value
+
+      let num1=Number(inputNum1)
+      let num2=Number(inputNum2)
+
+      if (inputNum1.trim() == "" || inputNum2.trim() == "" || isNaN(num1) || isNaN(num2)) {
+        console.log("Please enter numbers only")
+      }
+
+      else {
+        console.log(num1 + num2)
+      }
+
+    }
+</script>
